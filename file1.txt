@@ -1,7 +1,6 @@
 {
    key:"value",
 edad:27,
-nombre:"Fiorella",
-monto:100000
+nombre:"Fiorella" 
 }
 
