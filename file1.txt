@@ -1,8 +1,8 @@
 {
-   key:"value",
-edad:27,
-nombre:"Fiorella" 
-monto: 1000
-plazo crédito:96
+ key:"value",
+ edad:27,
+ nombre:"Fiorella" 
+ monto: 1000
+ plazo crédito:96
 }
 
