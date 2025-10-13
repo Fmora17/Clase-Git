@@ -3,5 +3,6 @@
 edad:27,
 nombre:"Fiorella" 
 monto: 1000
+plazo crédito:96
 }
 
