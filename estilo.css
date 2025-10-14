@@ -1,0 +1,35 @@
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #003366;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+.menu {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    gap: 40px; /* Espacio entre cada elemento */
+    margin-top: 20px;
+}
+
+.menu h2 {
+    color: #006699;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.menu h2:hover {
+    color: #0099cc;
+    text-decoration: underline;
+}
+
+p {
+    color: #333;
+    font-size: 1.2em;
+    margin-top: 30px;
+}
