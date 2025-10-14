@@ -1,0 +1,79 @@
+/* --- Estilos del Cuerpo de la Página (Coherencia con el diseño del banco) --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* Fondo suave y claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Centra el formulario vertical y horizontalmente */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ocupa al menos toda la altura de la vista */
+}
+
+/* --- Estilos del Formulario de Registro --- */
+form {
+    /* Define el contenedor y lo destaca */
+    max-width: 400px;
+    padding: 30px 40px;
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #ced4da;
+    border-radius: 10px; /* Esquinas ligeramente redondeadas */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra suave y profesional */
+    width: 100%;
+    box-sizing: border-box; /* Incluye padding en el ancho */
+}
+
+/* 1. Etiquetas (Labels) */
+label {
+    display: block; /* Cada etiqueta en su propia línea */
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #004a99; /* Azul institucional para las etiquetas */
+    font-size: 0.95em;
+}
+
+/* 2. Campos de Entrada (Inputs: Text, Email, Password) */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #c2c9d1; /* Borde suave */
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    /* Resalta el campo al enfocarlo (escribir) */
+    border-color: #0077b6; /* Azul vibrante */
+    box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.2); /* Sombra de enfoque sutil */
+    outline: none; /* Elimina el contorno predeterminado del navegador */
+}
+
+/* 3. Botón de Envío */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    background-color: #0077b6; /* Azul primario */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+input[type="submit"]:hover {
+    background-color: #004a99; /* Azul más oscuro al pasar el ratón */
+}
+
+input[type="submit"]:active {
+    transform: translateY(1px); /* Efecto de "clic" */
+}
