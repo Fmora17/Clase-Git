@@ -1,35 +1,71 @@
-body {
-    background-color: #f0f8ff;
-    font-family: Arial, sans-serif;
+/* --- Estilos del Formulario (Añadir a style.css) --- */
+
+form {
+    /* Define el ancho máximo y lo centra en la página */
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ccc; /* Borde suave */
+    border-radius: 8px; /* Esquinas redondeadas */
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para destacarlo */
+    text-align: left; /* Alinea el texto a la izquierda dentro del formulario */
+}
+
+form h2 {
+    /* Estilo para el título del formulario */
+    color: #004d99; /* Azul institucional */
     text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
 }
 
-h1 {
-    color: #003366;
-    font-size: 2.5em;
-    margin-top: 20px;
-}
-.menu {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    gap: 40px; /* Espacio entre cada elemento */
-    margin-top: 20px;
-}
-
-.menu h2 {
-    color: #006699;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-/* Efecto al pasar el mouse */
-.menu h2:hover {
-    color: #0099cc;
-    text-decoration: underline;
-}
-
-p {
+label {
+    /* Estilo para las etiquetas */
+    display: block; /* Hace que cada label ocupe su propia línea */
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: bold; /* Hace el texto de la etiqueta más prominente */
     color: #333;
-    font-size: 1.2em;
-    margin-top: 30px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    /* Estilo para todos los campos de entrada de texto, número y fecha */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho */
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    /* Resalta el campo cuando el usuario está escribiendo */
+    border-color: #007bff; /* Borde azul al enfocar */
+    outline: none; /* Elimina el contorno por defecto del navegador */
+}
+
+button[type="submit"] {
+    /* Estilo para el botón principal de envío */
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; /* Azul primario */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    /* Efecto al pasar el ratón */
+    background-color: #0056b3; /* Un azul más oscuro */
 }

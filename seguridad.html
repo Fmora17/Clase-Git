@@ -1,7 +1,82 @@
-<h2>Consejos de Seguridad</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="estilo.css">
+    <title>Seguridad</title>
+</head>
+<style>
+    /* --- ESTILOS PARA LA PÁGINA DE SEGURIDAD --- */
+
+/* 1. Estilos del Cuerpo (Coherencia con el diseño del banco) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* Fondo claro */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    text-align: center; /* Centra el contenido */
+}
+
+/* 2. Estilo para el Título Principal */
+h2 {
+    color: #004a99; /* Azul marino institucional */
+    font-size: 2em;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #0077b6; /* Línea azul como separación */
+    display: inline-block; /* Ajusta la línea al ancho del texto */
+}
+
+/* 3. Estilo para la Lista de Consejos */
+ul {
+    /* Define el ancho máximo y lo centra */
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    padding: 30px;
+    list-style: none; /* Quita las viñetas por defecto */
+    background-color: #ffffff; /* Fondo blanco para destacar */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: left; /* Alinea los puntos a la izquierda */
+}
+
+/* 4. Estilo para cada Ítem de la Lista */
+li {
+    padding: 15px 0;
+    font-size: 1.1em;
+    border-bottom: 1px solid #e0e0e0; /* Separador sutil entre consejos */
+    display: flex; /* Para alinear el ícono y el texto */
+    align-items: center;
+}
+
+li:last-child {
+    border-bottom: none; /* Elimina el separador del último ítem */
+}
+
+/* Añadir un ícono de seguridad/candado antes de cada ítem (pseudo-elemento) */
+li::before {
+    content: "🔒"; /* Candado o Checkmark como viñeta personalizada */
+    margin-right: 15px;
+    font-size: 1.2em;
+    color: #0077b6; /* Color azul para el ícono */
+}
+
+/* Resaltar palabras clave para énfasis */
+li strong {
+    color: #d9534f; /* Rojo de advertencia para destacar las prohibiciones/acciones clave */
+    font-weight: bold;
+}
+</style>
+<body>
+    <h2>Consejos de Seguridad</h2>
   <ul>
     <li>No compartas tu contraseña con nadie.</li>
     <li>Usa una combinación de letras, números y símbolos.</li>
     <li>Cierra sesión después de usar el sistema.</li>
     <li>Evita usar redes Wi-Fi públicas para acceder a tu cuenta.</li>
   </ul>
+</body>
+</html>
